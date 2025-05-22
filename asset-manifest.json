@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/elmentor-landing-page-mvp/static/css/main.1e21c776.css",
+    "main.js": "/elmentor-landing-page-mvp/static/js/main.a7dc34f2.js",
+    "static/js/453.c19e377f.chunk.js": "/elmentor-landing-page-mvp/static/js/453.c19e377f.chunk.js",
+    "index.html": "/elmentor-landing-page-mvp/index.html",
+    "main.1e21c776.css.map": "/elmentor-landing-page-mvp/static/css/main.1e21c776.css.map",
+    "main.a7dc34f2.js.map": "/elmentor-landing-page-mvp/static/js/main.a7dc34f2.js.map",
+    "453.c19e377f.chunk.js.map": "/elmentor-landing-page-mvp/static/js/453.c19e377f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e21c776.css",
+    "static/js/main.a7dc34f2.js"
+  ]
+}
