@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/elmentor-landing-page-ar/static/css/main.152058ab.css",
-    "main.js": "/elmentor-landing-page-ar/static/js/main.4cda843a.js",
-    "static/js/453.c19e377f.chunk.js": "/elmentor-landing-page-ar/static/js/453.c19e377f.chunk.js",
-    "index.html": "/elmentor-landing-page-ar/index.html",
-    "main.152058ab.css.map": "/elmentor-landing-page-ar/static/css/main.152058ab.css.map",
-    "main.4cda843a.js.map": "/elmentor-landing-page-ar/static/js/main.4cda843a.js.map",
-    "453.c19e377f.chunk.js.map": "/elmentor-landing-page-ar/static/js/453.c19e377f.chunk.js.map"
+    "main.css": "/elmentor-landing-page-mvp/static/css/main.a900c931.css",
+    "main.js": "/elmentor-landing-page-mvp/static/js/main.1925382f.js",
+    "static/js/453.c19e377f.chunk.js": "/elmentor-landing-page-mvp/static/js/453.c19e377f.chunk.js",
+    "index.html": "/elmentor-landing-page-mvp/index.html",
+    "main.a900c931.css.map": "/elmentor-landing-page-mvp/static/css/main.a900c931.css.map",
+    "main.1925382f.js.map": "/elmentor-landing-page-mvp/static/js/main.1925382f.js.map",
+    "453.c19e377f.chunk.js.map": "/elmentor-landing-page-mvp/static/js/453.c19e377f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.152058ab.css",
-    "static/js/main.4cda843a.js"
+    "static/css/main.a900c931.css",
+    "static/js/main.1925382f.js"
   ]
 }
