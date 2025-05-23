@@ -187,3 +187,25 @@ Sign up for our email list for updates, promotions, and more.
 ---
 
 *Note: We always keep our documentation and live app in sync. All changes are reflected in both the repository and the deployed GitHub Pages site. This is a core part of our workflow and is included in the main project plan.*
+
+---
+
+## Workflow Note: Reliable Deployment & Sync
+
+**Effective Deployment Practice:**
+- Always use the absolute path to the React app directory when running deployment commands in Codespaces or CI. For this project, the correct command is:
+
+```bash
+cd /workspaces/elmentor-landing-page-mvp/elmentor-landing-page && npm install && npm run deploy
+```
+- This ensures the deployment runs from the correct directory, avoiding common path errors.
+- After every documentation or code update, always:
+  1. Commit and push changes to the repository.
+  2. Deploy the app to GitHub Pages to keep the live site in sync.
+
+**Summary:**
+- Document every step and workflow improvement.
+- Always push and redeploy after changes.
+- Keep the repo and live app in sync for a professional, reproducible demo.
+
+---
