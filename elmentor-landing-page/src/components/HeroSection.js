@@ -24,15 +24,17 @@ const HeroSection = () => {
           <a href="https://github.com/ElmentorProgram" target="_blank" rel="noopener noreferrer" className="hero-link">GitHub Repo</a>
           <a href="https://www.facebook.com/mradwandevops" target="_blank" rel="noopener noreferrer" className="hero-link">Facebook</a>
           <a href="https://www.youtube.com/@MRadwanArabic" target="_blank" rel="noopener noreferrer" className="hero-link">YouTube</a>
+          {/* Language Switcher */}
+          <a href="https://aymanaboghonim.github.io/elmentor-landing-page-ar/" className="hero-link" style={{fontWeight:700, border:'1px solid #2563eb', marginLeft:8}} aria-label="Switch to Arabic">العربية</a>
         </div>
         <div className="hero-video">
-          <h3 className="hero-video-title">ايه هو برنامج المنتور وازاي ممكن يساعدك؟</h3>
+          <h3 className="hero-video-title">What is the Elmentor Program and how can it help you?</h3>
           <div className="hero-video-embed">
             <iframe
               width="100%"
               height="315"
               src="https://www.youtube.com/embed/hZ2oxrJg2Cc?start=5"
-              title="ايه هو برنامج المنتور وازاي ممكن يساعدك؟"
+              title="What is the Elmentor Program and how can it help you?"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen

@@ -9,8 +9,64 @@
 
 ---
 
-## Live Demo
-- **URL:** https://aymanaboghonim.github.io/elmentor-landing-page-mvp/
+## Live Demo URLs
+- **English Version:** [https://aymanaboghonim.github.io/elmentor-landing-page-mvp/](https://aymanaboghonim.github.io/elmentor-landing-page-mvp/)
+- **Arabic Version:** [https://aymanaboghonim.github.io/elmentor-landing-page-ar/](https://aymanaboghonim.github.io/elmentor-landing-page-ar/)
+
+---
+
+## Mentor Feedback Status
+- ✅ **Images:** All text in the Circles section is now real, accessible text (not images). Images are only used for visual aids.
+- ✅ **Video Title:** The video title and caption are in English in the English version, and in Arabic in the Arabic version.
+- ✅ **Multilingual:** Both English and Arabic versions are deployed, documented, and cross-linked.
+
+---
+
+## Sanity Check: Live App Verification
+
+After every deployment, verify the following to ensure the live site is accessible and functioning:
+
+### For Both English and Arabic Versions
+
+1. **Homepage Loads:** Visit the live URL and confirm the page loads without errors (no 404 or blank page).
+2. **Key Information Present:** Ensure the main program information and headings are visible.
+3. **Images Display:** Check that all images (e.g., logo, circles visual) appear correctly.
+4. **Circles Section:** Confirm all circle labels and explanations are real text (not images).
+5. **Video Embed:** The YouTube video is visible and playable, with the correct title/caption.
+6. **Navigation & Links:** All resource links (Code of Conduct, Blog, GitHub, Facebook, YouTube) work and open the correct pages.
+7. **Contact/Mentorship Section:** The contact form or info is present and accessible.
+8. **Responsive Design:** The site looks good on both desktop and mobile devices.
+9. **Language Version:** For both English and Arabic versions, verify correct language, layout (LTR/RTL), and content.
+
+**Automated Check:**  
+Run the Playwright scripts (`node playwright-screenshot.js` and `node playwright-video.js`) after each deploy to capture screenshots and a video demo. Review these outputs in `/screenshots/` to confirm all sections render as expected.
+
+---
+
+## Automated Sanity Checks with Playwright
+
+To ensure both the English and Arabic live sites are always accessible and working as expected, we use an automated Playwright test:
+
+- The test script (`playwright-sanity-check.spec.js`) checks:
+  1. Homepage loads and has the correct title
+  2. Key headings and info are present
+  3. Images (logo, circles visual) are visible
+  4. Circles section uses real text
+  5. YouTube video is embedded and has the correct title/caption
+  6. All navigation/resource links are present
+  7. Contact/Mentorship section is visible
+  8. Responsive design (mobile viewport)
+  9. Language and layout (LTR/RTL) are correct
+- The script runs for both the English and Arabic deployed URLs.
+- **How to run:**
+  ```bash
+  npx playwright test playwright-sanity-check.spec.js --reporter=list
+  ```
+- If any check fails, review the error output and fix the issue before considering the deployment successful.
+
+**Best Practice:**
+- Run this test after every deploy to GitHub Pages.
+- Document the results in your workflow log or README.
 
 ---
 
@@ -140,6 +196,33 @@ All outputs are saved in the `/screenshots/` directory for easy review and shari
 
 ---
 
+## Troubleshooting & Common Errors
+
+**Playwright Test Not Running:**
+- Always run Playwright from the workspace root, not from inside a subfolder.
+- Only one `playwright.config.js` should exist, in the root.
+- Test files must end with `.spec.js` or `.test.js` and be in the root or a `tests/` folder.
+- If you see errors about missing config in a subfolder, open a new terminal in the root and try again.
+- If tests are still not found, add a minimal test to confirm Playwright is working, then re-enable your main test.
+
+**Deployment Issues:**
+- Always run `npm install` after copying or updating an app.
+- Set the correct `homepage` in `package.json` before deploying.
+- Deploy from the correct app directory using the absolute path.
+- If the site is not found after deploy, check the build output and homepage URL.
+
+---
+
+## Language Switcher UI
+
+Both the English and Arabic versions include a language switcher in the Hero section:
+- English version: “العربية” button links to the Arabic site.
+- Arabic version: “English” button links to the English site.
+- The switcher is styled for visibility and accessibility.
+- After deployment, test both links to ensure they work and the correct language/layout loads.
+
+---
+
 ## Copilot Prompts Used
 - “Create a React HeroSection component introducing the Elmentor Program…”
 - “List activities as cards with icons…”
@@ -207,5 +290,22 @@ cd /workspaces/elmentor-landing-page-mvp/elmentor-landing-page && npm install &&
 - Document every step and workflow improvement.
 - Always push and redeploy after changes.
 - Keep the repo and live app in sync for a professional, reproducible demo.
+
+---
+
+## Guidelines for Visuals, Titles, and Multilingual Support
+
+- **Images:** All images (e.g., logos, diagrams) must have transparent backgrounds for a professional look and seamless integration with any background color. (Pending update when new assets are received.)
+- **Elmentor Circles:** The Circles section must use real, accessible text for all explanations and labels. Use images only for visual aids, not for conveying essential information. (Implementation: update CirclesSection.js to use only text for all circle labels and explanations.)
+- **Video Titles:** All video titles and captions must be in English, even if the video content is in another language, to maintain consistency with the rest of the page. (Implementation: update HeroSection.js to use an English title for the embedded video.)
+- **Multilingual Support:**
+  - Maintain two versions of the landing page: one in English (`elmentor-landing-page-en`), one in Arabic (`elmentor-landing-page-ar`).
+  - Each version should have its own deployment and documentation.
+  - To add a new language version:
+    1. Duplicate the English app folder and name it `elmentor-landing-page-ar`.
+    2. Translate all content and UI to Arabic, ensuring RTL layout and accessibility.
+    3. Update the README and deployment scripts for the new version.
+    4. Deploy to a separate GitHub Pages site (e.g., `/elmentor-landing-page-ar/`).
+    5. Link between language versions in the UI and documentation.
 
 ---
