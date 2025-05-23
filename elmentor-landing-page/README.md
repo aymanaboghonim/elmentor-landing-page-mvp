@@ -167,3 +167,23 @@ Built with GitHub Copilot Agentic Mode in Codespaces.
 - [Elmentor Program GitHub](https://github.com/ElmentorProgram)
 - [Community Blog](https://devopsvisions.github.io/)
 - [Code of Conduct](https://github.com/ElmentorProgram/.github/blob/main/CODE_OF_CONDUCT.md)
+
+## Empower Through Mentorship
+
+We believe in empowering our community through mentorship. If you have questions, want to get involved, or just want to say hello:
+
+### Contact Us
+
+**Drop us a line!**
+
+- **Name**
+- **Email*** (Please enter a valid email address)
+- **Message**
+
+Sign up for our email list for updates, promotions, and more.
+
+**Send**
+
+---
+
+*Note: We always keep our documentation and live app in sync. All changes are reflected in both the repository and the deployed GitHub Pages site. This is a core part of our workflow and is included in the main project plan.*
